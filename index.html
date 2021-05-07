@@ -8,57 +8,61 @@
 </head>
 <body>
     
-    <!-- nav>a*4 -->
+    <!-- nav>ul>(li>a)*4 -->
     <nav>
-        <a href="about_us.html">About us</a> |
-        <a href="skills.html">Skills</a> |
-        <a href="portfolio.html">Portfolio</a> |
-        <a href="contacts.html">Contacts</a>
-    </nav> <br>
+        <ul>
+            <li><a href="about_us.html">About us</a></li> 
+            <li><a href="skills.html">Skills</a></li> 
+            <li><a href="portfolio.html">Portfolio</a></li> 
+            <li><a href="contacts.html">Contacts</a></li>
+        </ul>
+    </nav>
 
-    <header>Welcome to my website</header>
+    <!-- section>h1+p -->
+    <section>
+        <h1>Welcome to my website</h1>
+        <p>This is my first website with many more to come :) </p>
+    </section>
 
-    <p>
-        This is my first website with many more to come :) 
-    </p>
+    <!-- section>h3+(div.skill$>h3{Skill $}+p{This is my number $ skill})*4 -->
+    <section>
+        <h3>My Skills</h3>
+        <div class="skill1">
+            <h3>Skill 1</h3>
+            <p>This is my number 1 skill</p>
+        </div>
+        <div class="skill2">
+            <h3>Skill 2</h3>
+            <p>This is my number 2 skill</p>
+        </div>
+        <div class="skill3">
+            <h3>Skill 3</h3>
+            <p>This is my number 3 skill</p>
+        </div>
+        <div class="skill4">
+            <h3>Skill 4</h3>
+            <p>This is my number 4 skill</p>
+        </div>
+    </section>    
+    
+    <!-- section>h3+(div.portfolio-iteam$>img)*3 -->
+    <section>
+        <h3>My Portfolio</h3>
+        <div class="portfolio-iteam1"><img src="1.jpg" alt="circle"></div>
+        <div class="portfolio-iteam2"><img src="2.jpg" alt="rectangle"></div>
+        <div class="portfolio-iteam3"><img src="3.jpg" alt="triangle"></div>
+    </section>
 
-    <header>My Skills</header>
-
-    <!-- (div.skill$>h3{Skill $}+p{This is my number $ skill})*4 -->
-    <div class="skill1">
-        <h3>Skill 1</h3>
-        <p>This is my number 1 skill</p>
-    </div>
-    <div class="skill2">
-        <h3>Skill 2</h3>
-        <p>This is my number 2 skill</p>
-    </div>
-    <div class="skill3">
-        <h3>Skill 3</h3>
-        <p>This is my number 3 skill</p>
-    </div>
-    <div class="skill4">
-        <h3>Skill 4</h3>
-        <p>This is my number 4 skill</p>
-    </div>
-
-    <header>My Portfolio</header>
-
-    <!-- (div.portfolio-iteam$>img)*3 -->
-    <div class="portfolio-iteam1"><img src="1.jpg" alt=""></div>
-    <div class="portfolio-iteam2"><img src="2.jpg" alt=""></div>
-    <div class="portfolio-iteam3"><img src="3.jpg" alt=""></div>
-
-    <header>John Smith</header> 
-
-    <address>
-        <a href="mailto:john.smith@myyemail.com">john.smith@myyemail.com</a><br>
-        <a href="tel:+5001010101010">(+500)1010101010</a><br>
-        Hello Street 101<br>    
-        123456, World
-    </address><br>
-
-    <form action="/action_page.php">
+    <!-- section>h3+address+form -->
+    <section>
+        <h3>John Smith</h3>
+        <address>
+            <a href="mailto:john.smith@myyemail.com">john.smith@myyemail.com</a><br>
+            <a href="tel:+5001010101010">(+500)1010101010</a><br>
+            Hello Street 101<br>    
+            123456, World
+        </address><br>
+        <form action="/action_page.php">
             <label for="name">Name:</label><br>
             <input type="text" id="name" name="name" value="" required><br>
             <label for="subject">Subject:</label><br>
@@ -66,9 +70,9 @@
             <label for="message">Message:</label><br>
             <input type="text" id="message" name="message" value="" required><br><br>
             <input type="submit" value="Send">
-          </form> 
-    </form>
-
+        </form>
+    </section>
+    
 </body>
 </html>
 
